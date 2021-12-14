@@ -1,0 +1,36 @@
+{%extends "base.html"%}
+
+{%block head%}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static',filename="styles/styles2.css")}}" type="text/css">
+{%endblock%}
+
+{%block content%}
+<div class="row">
+    <div class="col-md-4">
+        <div class="contentArea">
+            <h3>Places of Birth</h3>
+            <p>Add your texts here</p>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="mapArea">
+            <h3 class="text-center">Geospatial mapping</h3>
+            <button class="btn btn-primary">
+                <a href="{{url_for('view.place_of_birth')}}" target='ifrm'><span class="buttonLinks">Load map</span></a>
+            </button>
+            <iframe class="map" src="" name="ifrm"></iframe>
+        </div>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="graphsArea">
+        <h3 class="text-center">Graphs</h3>
+        <figure>
+            <img src="{{url_for('static',filename='files/Community Health Units.png')}}"/>
+            <figcaption class="text-center">Add text here</figcaption>
+        </figure>
+    </div>
+</div>
+{%endblock%}

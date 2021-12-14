@@ -1,0 +1,28 @@
+.navbarArea {
+    background-color: rgb(9, 50, 97);
+}
+
+.graphsArea {
+    padding: 2.5em;
+}
+
+img {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 65vh;
+}
+
+.contentArea {
+    padding: 2.5em;
+}
+
+.mapArea {
+    padding: 1em;
+}
+
+.buttonLinks {
+    color: white;
+}
